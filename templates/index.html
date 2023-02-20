@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE = edge">
+    <meta name = "viewport" content="width = device-width,initial-scale = 1.0 ">
+</head>    
+<style>
+    body{
+        background-image: url("https://nycdsa-blog-files.s3.us-east-2.amazonaws.com/2021/03/chaitali-majumder/house-price-497112-KhCJQICS.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed; background-size: cover;
+        }
+</style>
+<title style="text-align:center;">House Price Prediction</title>
+
+
+    <h1>House Price Prediction</h1>
+    <form method = "POST" action = "/house_price">
+
+        <label> X1_transaction_date : </label>
+        <input type = "text" name = "X1_transaction_date">
+        </select>
+        
+        
+        <br>
+        <br>
+        <label> X2_house_age : </label>
+        <input type = "text" name = "X2_house_age">
+        </select>
+        
+        
+        <br>
+        <br>
+        <label> X3_distance_to_the_nearest_MRT_station : </label>
+        <input type = "text" name = "X3_distance_to_the_nearest_MRT_station">
+        </select>
+        
+        
+        <br>
+        <br><label> X4_number_of_convenience_stores : </label>
+        <input type = "text" name = "X4_number_of_convenience_stores">
+        </select>
+        
+        
+        <br>
+        <br>
+        <label> X5_latitude : </label>
+        <input type = "text" name = "X5_latitude">
+        </select>
+        
+        
+        <br>
+        <br>
+        <label> X6_longitude : </label>
+        <input type = "text" name = "X6_longitude">
+        </select>
+        
+        <br>
+        <br>
+        <input type = "submit" value = "SUBMIT">
+        
+        <br>
+
+            
+        <p>Price of House  <b>{{ prediction }}</b></p>  
+        
+    </form>    
+</body>
+</html>
+
+        
+        
